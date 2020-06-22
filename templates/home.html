@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Wine Quality Model</title>
+  </head>
+
+  <body>
+    <h4><font color="black">Made By: Gaurav R. Sahani</font></h4>
+    </br>
+    <h1><div style="text-align:center"><font color="blue">Wine Quality Model</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">By Inserting values for various parameters, this model, will predict the Quality of the Wine, taken for Testing Purposes.</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="Type"><p class="font-weight-bold">Type</p></label>
+              <input type="text" name="type">
+              <h4>[For Red Wine: "0", and For White Wine: "1"]</h4>
+              </br>
+              </div>
+
+              <div class="form-group">
+                <label for="FixedAcidity"><p class="font-weight-bold">FixedAcidity</p></label>
+                <input type="text" name="fixed_acidity">
+                <h4>[Fixed Acidity Value Range:[7.0 to 13.0]]</h4>
+                </br>
+                </div>
+
+                <div class="form-group">
+                  <label for="VolatileAcidity"><p class="font-weight-bold">VolatileAcidity</p></label>
+                  <input type="text" name="volatile_acidity">
+                  <h4>[Volatile Acidity Value Range:[0.25 to 0.90]]</h4>
+                  </br>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="CitricAcid"><p class="font-weight-bold">CitricAcid</p></label>
+                    <input type="text" name="citric_acid">
+                    <h4>[Citric Acid Value Range:[0.35 to 0.75]]</h4>
+                    </br>
+                    </div>
+            
+                    <div class="form-group">
+                      <label for="ResidualSugar"><p class="font-weight-bold">ResidualSugar</p></label>
+                      <input type="text" name="residual_sugar">
+                      <h4>[Residual Sugar Value Range:[1.0 to 22.0]]</h4>
+                      </br>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Chlorides"><p class="font-weight-bold">Chlorides</p></label>
+                        <input type="text" name="chlorides">
+                        <h4>[Chlorides Value Range:[0.045 to 0.25]]</h4>
+                        </br>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label for="FreeSulfurdioxide"><p class="font-weight-bold">FreeSulfurdioxide</p></label>
+                          <input type="text" name="free_sulfur_dioxide">
+                          <h4>[Free Sulphur-dioxide Value Range:[1.0 to 100.0]]</h4>
+                          </br>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="TotalSulfurdioxide"><p class="font-weight-bold">TotalSulfurdioxide</p></label>
+                            <input type="text" name="total_sulfur_dioxide">
+                            <h4>[Total Sulfur-dioxide Value Range:[1.0 to 200.0]]</h4>
+                            </br>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="Density"><p class="font-weight-bold">Density</p></label>
+                              <input type="text" name="density">
+                              <h4>[Density Value Range:[0.90 to 1.0]]</h4>
+                              </br>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="pH"><p class="font-weight-bold">pH</p></label>
+                                <input type="text" name="pH">
+                                <h4>[pH Value Range:[2.0 to 4.0]]</h4>
+                                </br>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="Sulphates"><p class="font-weight-bold">Sulphates</p></label>
+                                  <input type="text" name="sulphates">
+                                  <h4>[Sulphates Value Range:[0.45 to 1.5]]</h4>
+                                  </br>
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="Alcohol"><p class="font-weight-bold">Alcohol</p></label>
+                                    <input type="text" name="alcohol">
+                                    <h4>[Alcohol Value Range:[8.0 to 15.0]]</h4>
+                                    </br>
+                                    </div>
+
+                       <h2><input class='btn btn-primary' type='submit' value='Submit'><h2>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
